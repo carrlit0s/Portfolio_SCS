@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projects - Carlos Parra Camacho</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-nav">
+                <div>
+                    <h1>Carlos Parra Camacho</h1>
+                    <p class="subtitle">Computer Science Student | UCAM Murcia</p>
+                </div>
+                <nav class="main-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="proyects.html" class="nav-link active">Projects</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+
+            <!-- Parallel Programming Project -->
+            <section class="project-detail" id="parallel">
+                <h2>Parallel Programming: CUDA Gradient Calculation</h2>
+                <div class="project-detail-content">
+                    <p>
+                        Designed and implemented a high-performance GPU-based solution for computing gradients in multivariable 
+                        equation systems using CUDA and C.
+                    </p>
+                    
+                    <h3>Key Technical Contributions</h3>
+                    <ul>
+                        <li><strong>Massive Parallelism:</strong> Implemented 1D/2D grid mapping where each GPU thread calculates an independent cell of the Jacobian matrix, achieving "embarrassingly parallel" workload distribution.</li>
+                        <li><strong>Hardware Optimization:</strong> Configured optimal block sizes (1024 threads) to maximize GPU occupancy and efficient warp scheduling.</li>
+                        <li><strong>Scalability:</strong> Architecture supports systems with thousands of functions and variables, demonstrating GPGPU effectiveness for scientific computing.</li>
+                    </ul>
+
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>CUDA (Compute Unified Device Architecture)</li>
+                        <li>C Programming Language</li>
+                        <li>GPU Computing</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Distributed Apps Project -->
+            <section class="project-detail" id="sockets">
+                <h2>Distributed Applications: University Management System</h2>
+                <div class="project-detail-content">
+                    <p>
+                        Developed a distributed Client-Server application in Java for managing university data (Degrees, 
+                        Subjects, and Enrollments) using TCP Sockets with multi-threaded architecture.
+                    </p>
+                    
+                    <h3>Architectural Highlights</h3>
+                    <ul>
+                        <li><strong>Client-Server Model:</strong> Multi-threaded server handling concurrent clients with custom communication protocol.</li>
+                        <li><strong>Data Persistence:</strong> Singleton Pattern implementation for consistent data access across all client threads.</li>
+                        <li><strong>Multithreading:</strong> Each new connection spawns a ClientHandler thread, enabling non-blocking multi-user service.</li>
+                    </ul>
+
+                    <h3>Core Features</h3>
+                    <ul>
+                        <li>User authentication and session management</li>
+                        <li>CRUD operations (Create, Read, Update, Delete) for Degrees and Enrollments</li>
+                        <li>Robust 3-step handshake protocol for secure object transfer over separate data channels</li>
+                        <li>HTTP-style error handling (404, 401, 200 status codes)</li>
+                    </ul>
+
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>Java Sockets (TCP/IP)</li>
+                        <li>Object Serialization</li>
+                        <li>Multi-threading</li>
+                        <li>Design Patterns (Singleton, Command Pattern)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Java GUI Project -->
+            <section class="project-detail" id="javagui">
+                <h2>Java GUI: Soccer Team Management Application</h2>
+                <div class="project-detail-content">
+                    <p>
+                        Built a comprehensive desktop application for managing soccer team data with an intuitive graphical 
+                        user interface using Java Swing/AWT.
+                    </p>
+                    
+                    <h3>Main Features</h3>
+                    <ul>
+                        <li>Team and player management interface</li>
+                        <li>Match scheduling and results tracking</li>
+                        <li>Player statistics and performance monitoring</li>
+                        <li>User-friendly data input and display forms</li>
+                    </ul>
+
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>Java Swing / AWT</li>
+                        <li>GUI Development</li>
+                        <li>Event-driven Programming</li>
+                    </ul>
+                </div>
+            </section>
+
+            <a href="index.html" class="back-button">← Back to Home</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:carlosparracamacho@gmail.com">carlosparracamacho@gmail.com</a></p>
+                </div>
+                <div class="social-links">
+                    <h3>Social Networks</h3>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/carlos-parra-camacho-307a192a7/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/carrlit0s" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.instagram.com/carrlit0s_/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-text">&copy; 2026 Carlos Parra Camacho. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
